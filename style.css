@@ -1,0 +1,124 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  color: #333;
+}
+
+.session-selector {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.session-button {
+  margin: 0 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ccc;
+  color: white;
+  cursor: pointer;
+}
+
+.session-button.active {
+  background-color: #007bff;
+}
+
+.timer {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.controls button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#start {
+  background-color: #28a745;
+  color: white;
+}
+
+#pause {
+  background-color: #ffc107;
+  color: white;
+}
+
+#reset {
+  background-color: #dc3545;
+  color: white;
+}
+
+.controls button:hover {
+  opacity: 0.8;
+}
+
+.task-list {
+  margin-top: 20px;
+  text-align: left;
+}
+
+#task-input {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#add-task {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ul#tasks {
+  list-style: none;
+  padding: 0;
+}
+
+ul#tasks li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 5px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+ul#tasks li button.delete-task {
+  padding: 5px 10px;
+  border: none;
+  background-color: #dc3545;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ul#tasks li button.delete-task:hover {
+  opacity: 0.8;
+}
