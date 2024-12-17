@@ -2,7 +2,7 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  background-color: #f4f4f4;
+  background-color: #8DDFCB;
   margin: 0;
   padding: 0;
 }
@@ -10,14 +10,16 @@ body {
 .container {
   max-width: 500px;
   margin: 50px auto;
-  padding: 20px;
+  padding: 50px;
   background: white;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 0px 0px #000;
 }
 
 h1 {
-  color: #333;
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .session-selector {
@@ -29,15 +31,20 @@ h1 {
 .session-button {
   margin: 0 5px;
   padding: 10px 20px;
-  border: none;
+  border: bold;
   border-radius: 5px;
-  background-color: #ccc;
-  color: white;
+  background-color: white;
+  color: black;
+  font-weight: bold;
   cursor: pointer;
+  box-shadow: 3px 3px 0px 0px #000;
+  transition: all 0.1s ease-in-out;
 }
 
 .session-button.active {
-  background-color: #007bff;
+  transform: translate(2.5px, 2.5px);
+  box-shadow: 1px 1px 0px 0px #000;
+  background-color: #59D5E0;
 }
 
 .timer {
@@ -49,25 +56,32 @@ h1 {
 .controls button {
   margin: 5px;
   padding: 10px 20px;
-  font-size: 1rem;
-  border: none;
+  font-weight: bold;
+  border: 1;
   border-radius: 5px;
   cursor: pointer;
+  box-shadow: 3px 3px 0px 0px #000;
+  transition: all 0.1s ease-in-out;
+}
+
+.controls button:active {
+  transform: translate(2.5px, 2.5px);
+  box-shadow: 1px 1px 0px 0px #000;
 }
 
 #start {
-  background-color: #28a745;
-  color: white;
+  background-color: #3CCF4E;
+  color: black;
 }
 
 #pause {
-  background-color: #ffc107;
-  color: white;
+  background-color: #FFF455;
+  color: black;
 }
 
 #reset {
-  background-color: #dc3545;
-  color: white;
+  background-color: #FF2929;
+  color: black;
 }
 
 .controls button:hover {
@@ -80,18 +94,37 @@ h1 {
 }
 
 #task-input {
-  width: 70%;
+  width: 75%;
   padding: 10px;
   margin-bottom: 10px;
+  box-shadow: 3px 3px 0px 0px #000;
+  border-radius: 5px;
+  border: 1;
+  outline: none; /* Hilangkan outline bawaan browser */
+  transition: all 0.2s ease-in-out; /* Transisi untuk animasi halus */
 }
+
+#task-input:focus {
+  transform: translate(3px, 3px); /* Geser input ke arah bayangan */
+  box-shadow: 0px 0px 0px 0px #000; /* Hilangkan bayangan */
+}
+
 
 #add-task {
   padding: 10px 15px;
-  border: none;
+  border: 1;
+  font-weight: bold;
   background-color: #007bff;
   color: white;
   border-radius: 5px;
   cursor: pointer;
+  box-shadow: 3px 3px 0px 0px #000;
+  transition: all 0.1s ease-in-out;
+}
+
+#add-task:active {
+  transform: translate(2.5px, 2.5px);
+  box-shadow: 1px 1px 0px 0px #000;
 }
 
 ul#tasks {
@@ -103,22 +136,27 @@ ul#tasks li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: bold;
   padding: 10px;
   margin-bottom: 5px;
   background: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 5px;
+  box-shadow: 3px 3px 0px 0px #000;
 }
 
 ul#tasks li button.delete-task {
   padding: 5px 10px;
   border: none;
-  background-color: #dc3545;
+  background-color: #FF2929;
   color: white;
   border-radius: 5px;
   cursor: pointer;
+  box-shadow: 3px 3px 0px 0px #000;
+  transition: all 0.1s ease-in-out;
 }
 
-ul#tasks li button.delete-task:hover {
-  opacity: 0.8;
+ul#tasks li button.delete-task:active {
+  transform: translate(2.5px, 2.5px);
+  box-shadow: 1px 1px 0px 0px #000;
 }
